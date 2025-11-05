@@ -18,9 +18,9 @@ DockerRegistryContainer/
 
 The **Private Docker Registry Container** provides a self-hosted, secured Docker Registry used to:
 
-* Stores Fortify SSC, ScanCentral, and related Docker images privately.
-* Authenticates users via the `auth/` configuration (Basic one).
-* Serves the registry and its UI over HTTPS using the `certificates/` and `registry_ui_https_config/` directories.
+* Store Fortify SSC, ScanCentral, and related Docker images privately.
+* Authenticate users via the `auth/` configuration (Basic one).
+* Serve the registry and its UI over HTTPS using the `certificates/` and `registry_ui_https_config/` directories.
 * Automate the Docker Registry containers/images management (build and destroy) using the scripts in `docker_management_scripts/` directory.
 
 ---

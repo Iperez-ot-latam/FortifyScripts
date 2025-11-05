@@ -55,7 +55,7 @@ Before using the scripts, ensure you have:
 
 💬 For general assistance, please contact me at 📧 [myemail](mailto:iperez@ot-latam.com) to get tips and tricks from Fortify and usage of the scripts.
  
-- 🆘 OpenText/OT-Latam customers can contact our world-class [support team](https://portal.microfocus.com) for questions, enhancement requests and bug reports.
+- 🆘 OpenText/OT-Latam customers can contact our [support team](https://portal.microfocus.com) for questions, enhancement requests and bug reports.
 - 🙋 You can also raise questions and issues through your OpenText/OT-Latam Fortify representative like Customer Success Manager or Technical Account Manager if applicable.
 - 🧭 You may also consider raising questions or issues through the [GitHub Issues page](https://github.com/Iperez-ot-latam/FortifyScripts/issues) (if available for this repository), providing public visibility and allowing anyone (including all contributors) to review and comment on your question or issue. Note that this requires a GitHub account, and given public visibility, you should refrain from posting any confidential data through this channel. 
 

@@ -97,3 +97,10 @@ CUSTOM_REGISTRY_URL=myregistry.example.com
 * Windows-only images (e.g., `*windows*`) are skipped for compatibility.
 * Errors during image pulls or pushes stop the execution (due to `set -e`).
 * The list of Fortify Docker images can be customized in the `FORTIFY_DOCKER_IMAGES` array inside the script.
+
+---
+
+## 🧾 License
+
+This project is part of the **Fortify SSC Automation Utilities** suite.
+Use according to your organization’s internal deployment and licensing guidelines.

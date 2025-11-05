@@ -91,6 +91,8 @@ FortifySSCMySQLDBDockerContainer/
 * 🧰 SSL certificates and credentials must be managed according to your organization’s security standards.
 * 📦 Designed to integrate with the broader **Fortify SSC Docker Automation Suite**.
 
+---
+
 ## 🧾 License
 
 This project is part of the **Fortify SSC Scripts Utilities** suite.

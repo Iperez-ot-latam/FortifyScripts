@@ -145,7 +145,7 @@ openssl req -x509 -nodes -days 4096 -newkey rsa:4096 \
 
 The values are at the discretion of each user.
 
-```bash
+```makefile
 # Defines the variables
 HOST_IP_ADDRESS=                                                # Linux Host IP Address
 CUSTOM_REGISTRY_CONTAINER_IPADDRESS=                            # Docker Registry Container IP Address

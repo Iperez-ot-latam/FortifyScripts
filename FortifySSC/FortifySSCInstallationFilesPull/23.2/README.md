@@ -37,11 +37,18 @@ Make sure that:
    The script automatically reads the `.env` file if it exists in the current directory.
    💡 *This allows you to define version-specific paths and reuse them easily.*
 
-2. **Directory validation and creation**
+      * Run the script with:
+
+      ```bash
+      chmod +x fortify_ssc_fortifyversion_files_pull.sh
+      ./fortify_ssc_fortifyversion_files_pull.sh
+      ```
+
+3. **Directory validation and creation**
    The script checks if both backup and installation directories exist.
    If not, it creates them automatically under the paths specified in `.env`.
 
-3. **Pulling files from OneDrive**
+4. **Pulling files from OneDrive**
    Using `rclone`, the script retrieves the installation package from (example):
 
    ```
@@ -50,7 +57,7 @@ Make sure that:
 
    and copies it into both the **backup** and **installation** directories.
 
-4. **Verification and listing**
+5. **Verification and listing**
    Once completed, the script lists the extracted files in each directory and confirms successful execution.
 
 ---
@@ -61,17 +68,6 @@ Make sure that:
 * 🧰 The script uses `set -e` to immediately stop on any command failure.
 * 🗂️ Both backup and installation directories will mirror the retrieved installation files.
 * 🧑‍💻 Ideal for automated setup or integration with larger Fortify SSC deployment scripts.
-
----
-
-## 🚀 Usage Overview
-
-* Run the script with:
-
-```bash
-chmod +x fortify_ssc_fortifyversion_files_pull.sh
-./fortify_ssc_fortifyversion_files_pull.sh
-```
 
 ---
 

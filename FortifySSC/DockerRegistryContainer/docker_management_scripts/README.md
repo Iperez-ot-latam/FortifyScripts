@@ -1,4 +1,4 @@
-# 🐳 Docker Private Registry Environment Variables
+# 🐳 Docker Private Registry Environment Variables (build and destroy script)
 
 The definition of the environment variables used to configure and deploy a **secure private Docker Registry** with a **web-based UI** using HTTPS, Basic Authentication, and custom networking.
 The `.env` file centralizes all configuration values required by the build and destroy scripts that automate the registry’s deployment and teardown.

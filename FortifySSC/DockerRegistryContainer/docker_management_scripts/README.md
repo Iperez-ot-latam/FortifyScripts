@@ -1,4 +1,4 @@
-# 🐳 Docker Private Registry Environment Variables (build and destroy script)
+# 🐳 Docker Private Registry Environment Variables (build and destroy scripts)
 
 The definition of the environment variables used to configure and deploy a **secure private Docker Registry** with a **web-based UI** using HTTPS, Basic Authentication, and custom networking.
 The `.env` file centralizes all configuration values required by the build and destroy scripts that automate the registry’s deployment and teardown.
@@ -9,7 +9,31 @@ The `.env` file centralizes all configuration values required by the build and d
 
 The Docker Registry and its UI run on a **dedicated macvlan network** (to allow communication between the host and the Docker Containers with the assigned static IPs, host-mounted certificate directories, and user authentication.
 
-### Components
+---
+
+## 🚀 Usage Overview
+
+1. **Ensure `.env` is configured correctly** with valid values.
+2. **Run the scripts** with:
+
+   ```bash
+   # Build Script
+   chmod +x nacho_docker_registry_builder.sh
+   ./nacho_docker_registry_builder.sh
+   ```
+
+   ```bash
+   # Destroy Script
+   chmod +x nacho_docker_registry_destroyer.sh
+   ./nacho_docker_registry_destroyer.sh
+   ```
+3. The scripts will:
+
+   * Create 2 Docker Containers, one for the BackEnd and another one for the FrontEnd.
+
+---
+
+### 💠 Components
 
 | Component                      | Description                                                            |
 | ------------------------------ | ---------------------------------------------------------------------- |

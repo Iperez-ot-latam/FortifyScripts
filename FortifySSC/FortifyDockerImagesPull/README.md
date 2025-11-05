@@ -77,9 +77,9 @@ CUSTOM_REGISTRY_URL=myregistry.example.com
 ## 📁 Directory Structure
 
 ```
- FortifyDockerImagesPull/
- ├── .env
- ├── fortify_docker_images_pull.sh
+ FortifyDockerImagesPull/                            
+├── .env                                             # Environment variables file containing Docker Hub, Registry credentials, and URLs
+└── fortify_docker_images_pull.sh                    # Bash script that automates pulling Fortify Docker images from Docker Hub and pushing them to a private registry
 ```
 
 ---

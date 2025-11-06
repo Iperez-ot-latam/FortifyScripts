@@ -60,8 +60,9 @@ This Bash script automates the installation of **Java OpenJDK 17** on Linux syst
 
 ```
 JavaInstallation/
-├── 17/                               # Directory for Java version to install
-    └──── java_openjdk17_install.sh   # Main installation script
+|   ├── 17/                             # Directory for Java version to install
+|   └── java_openjdk17_install.sh       # Main installation script
+└────────────────────────────────
 ```
 
 ---

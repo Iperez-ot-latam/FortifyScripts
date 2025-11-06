@@ -32,6 +32,7 @@ LDAPDockerContainer/
 |             |                     └── .env                                        # Environment variables file used by the destroy script.
 !             └── certificates/                                                     # SSL/TLS self-signed certificates for secure HTTPS access to the eDirectory LDAP and API containers.
 └── IdentityConsole/                                                                # Directory of the configuration and scripts for deploying the Identity Console container.
+└───────────────────────────────────────────────────────────────────────────────
 ```
 
 ---

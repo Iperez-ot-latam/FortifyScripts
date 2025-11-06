@@ -85,7 +85,7 @@ The Docker Registry and its UI run on a **dedicated macvlan network** (to allow 
 | `CUSTOM_REGISTRY_UI_HOST_HTTPS_PORT`      | Host HTTPS port         | `8443` (default https port)                                                           |
 | `CUSTOM_REGISTRY_UI_CONTAINER_HTTP_PORT`  | Container HTTP port     | `80` (another default http port)                                                      |
 | `CUSTOM_REGISTRY_UI_CONTAINER_HTTPS_PORT` | Container HTTPS port    | `443` (another default https port)                                                    |
-| `CUSTOM_REGISTRY_UI_HOSTNAME`             | UI hostname             | `docker.registry.ui.nacho.com.ar`                                                     |
+| `CUSTOM_REGISTRY_UI_HOSTNAME`             | UI hostname             | `dockerregistryuihostname`                                                            |
 | `CUSTOM_REGISTRY_UI_URL`                  | Full UI URL             | `https://dockerregistryuihostname`                                                    |
 | `CUSTOM_REGISTRY_TITLE`                   | Display name for the UI | `any name of your choice`                                                             |
 

@@ -71,15 +71,25 @@ chmod +x fortifyssc_db_builder.sh
 
 ```
 FortifySSCMySQLDBDockerContainer/                        
-├── FullDockerContainer/                                 # Complete container setup with host integration (volumes, SSL, network)
-│   └── docker_management_scripts/                       # Contains scripts to build and destroy the full Docker container
-│       ├── builder/                                     # Scripts to build, configure, and run the full MySQL container
-│       └── destroyer/                                   # Scripts to stop and remove the full MySQL container and related resources
+├── FullDockerContainer/                                 # Main directory for the complete container setup with host integration (volumes, SSL, network) version.
+│   └── docker_management_scripts/                       # Directory that contains the scripts to build and destroy the full Docker container.
+│       ├── builder/                                     # Build script directory.
+|       |     ├──                                        # Scripts to build, configure, and run the full MySQL container.
+|       |     └──
+│       └── destroyer/                                   # Destroy script directory.
+|              ├──                                       # Scripts to stop and remove the full MySQL container and related resources.
+|              └──                                                                             
 │
-└── HostlessDockerContainer/                             # Lightweight, host-independent MySQL container setup
-    └── docker_management_scripts/                       # Contains scripts to manage the hostless MySQL container
-        ├── builder/                                     # Scripts to build and start the hostless MySQL container
-        └── destroyer/                                   # Scripts to stop and remove the hostless MySQL container and cleanup artifacts
+└── HostlessDockerContainer/                             # Main directory for the lightweight, host-independent MySQL container setup version.
+|   └── docker_management_scripts/                       # Directory that contains the scripts to manage the hostless MySQL container
+|       ├── builder/                                     # Build script directory.
+|       |     ├── fortifyssc_db_builder.sh               # Script that builds a lightweight, host-independent MySQL container setup.
+|       |     └── .env                                   # Environment variables file used by the build script.  
+|       └── destroyer/                                   # Scripts to stop and remove the hostless MySQL container and cleanup artifacts.
+|              ├──
+|              └── 
+|        
+└─────────────────────────────────────────
 ```
 
 ---

@@ -24,6 +24,8 @@ It creates and applies self-signed SSL certificates, updates Tomcat configuratio
 * 🌍 Proper permissions to manage the Tomcat service and modify system CA.
 * 📄 `.env` file configured with the following variables:
 
+The values are at the discretion of each user.
+
 ```makefile
 CERTIFICATES_DIR=                                 # Directory where the certificate files for Fortify SSC are stored
 APP_PROPERTIES_FILE=                              # Directory where the app.properties file from Fortify SSC is stored

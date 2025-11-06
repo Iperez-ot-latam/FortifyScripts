@@ -74,9 +74,11 @@ Make sure that:
 ## 📁 Directory Structure
 
 ```
-FortifySSCInstallationFilesPull/                    
-├── .env                                             # Environment variables file containing configuration values (e.g., directories, SSC version)
-└── fortify_ssc_fortifyversion_files_pull.sh         # Bash script that automates downloading Fortify SSC installation files using rclone
+FortifySSCInstallationFilesPull/
+├── 23.2/                                                  # Fortify SSC Installation files version to pull directory.                      
+|     ├── .env                                             # Environment variables file containing the configuration values (e.g., directories, SSC version).
+|     └── fortify_ssc_fortifyversion_files_pull.sh         # Bash script that automates downloading Fortify SSC installation files using rclone.
+└─────────────────────────────────────────────────
 ```
 
 ---

@@ -38,7 +38,7 @@ LDAPDockerContainer/
 
 ## 🚀 Usage Overview
 
-1. Navigate to the desired component folder (e.g., `EDirectory` or `IdentityConsole`).
+1. Navigate to the desired component folder (e.g., `EDirectory` or `IdentityConsole`) and choose the version you want to deploy on a container.
 2. Review and adjust the `.env` file if present to fit your environment.
 3. Run the corresponding setup or management script (e.g., `builder` or `destroyer` script) with:
 

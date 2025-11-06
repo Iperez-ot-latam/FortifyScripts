@@ -6,10 +6,27 @@ This directory contains the configuration files, certificates, and management sc
 
 ```
 DockerRegistryContainer/
-├── auth/                         # Authentication files (htpasswd --> authentication file used by the Docker Registry (nginx) for basic HTTP authentication).
-├── certificates/                 # SSL/TLS self-signed certificates for secure HTTPS access to the Docker Registtry (BackEnd and FrontEnd).
-├── docker_management_scripts/    # Shell scripts to build and destroy the Docker Registry containers (BackEnd and FrontEnd).
-└── registry_ui_https_config/     # Configuration file for the Docker Registry UI over HTTPS.
+├── auth/                                                       # Authentication files directory.
+|     └── .htpasswd                                             # Basic authentication file (htpasswd --> authentication file used by the Docker Registry (nginx) for basic HTTP authentication).
+├── certificates/                                               # SSL/TLS self-signed certificates directory for secure HTTPS access to the Docker Registtry (BackEnd and FrontEnd).
+|       ├── registryui/                                         # Docker Registry UI (FrontEnd) certificates directory.
+|       |       ├── fileui.key                                  # Private key file of the Docker Registry UI.
+|       |       ├── fileui.crt                                  # Certificate file of the Docker Registry UI.
+|       |       └── fileui.pem                                  # PEM file of the Docker Registry UI.
+|       └── registry/                                           # Docker Registry (BackEnd) certificates directory.
+|       |       ├── filereg.key                                 # Private key file of the Docker Registry.
+|       |       ├── filereg.crt                                 # Certificate file of the Docker Registry.
+|       |       └── filereg.pem                                 # PEM file of the Docker Registry.
+├── docker_management_scripts/                                  # Shell scripts to build and destroy the Docker Registry containers (BackEnd and FrontEnd).
+|               ├── builder/                                    # Build script directory.
+|               |      ├── nacho_docker_registry_builder.sh     # Script that builds the Docker Registry Containers (BackEnd and FrontEnd).
+|               |      └── .env                                 # Environment variables file used by the build script. 
+|               └── destroyer/                                  # Destroyer script directory.
+|               |      ├── nacho_docker_registry_destroyer.sh   # Script that destroy the Docker Registry Containers (BackEnd and FrontEnd).
+|               |      └── .env                                 # Environment variables file used by the destroy script. 
+└── registry_ui_https_config/                                   # Configuration file for the Docker Registry UI directory.
+|               └── default.conf                                # Configuration file for the Docker Registry UI over HTTPS (nginx).
+├─────────────────────────────────────────────────────────────
 ```
 
 ---

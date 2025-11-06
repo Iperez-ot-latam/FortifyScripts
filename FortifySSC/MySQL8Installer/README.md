@@ -1,4 +1,4 @@
-# 🐬 MySQL 8.0 Client Installer Script
+# 🐬 MySQL8Installer (MySQL 8.0 Client Installer Script)
 
 This Bash script automates the installation of the **MySQL 8.0 Client** on a Linux system. It ensures your environment is properly configured with the latest client version, sets up repositories, imports necessary GPG keys, and optionally downloads configuration files from OneDrive.
 

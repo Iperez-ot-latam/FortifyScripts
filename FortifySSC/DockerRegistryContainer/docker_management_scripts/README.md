@@ -37,10 +37,10 @@ The Docker Registry and its UI run on a **dedicated macvlan network** (to allow 
 
 | Component                      | Description                                                            |
 | ------------------------------ | ---------------------------------------------------------------------- |
-| **Docker Registry**            | Stores Docker images securely in a private repository.                 |
-| **Docker Registry UI**         | Provides a web interface for browsing and managing images.             |
-| **Certificates**               | Enables HTTPS encryption for both the registry and its UI.             |
-| **Authentication (.htpasswd)** | Protects access to the UI and BackEnd using Basic Authentication.      |
+| **Docker Registry**            | Stores Docker images securely in a private repository                  |
+| **Docker Registry UI**         | Provides a web interface for browsing and managing images              |
+| **Certificates**               | Enables HTTPS encryption for both the registry and its UI              |
+| **Authentication (.htpasswd)** | Protects access to the UI and BackEnd using Basic Authentication       |
 
 ---
 

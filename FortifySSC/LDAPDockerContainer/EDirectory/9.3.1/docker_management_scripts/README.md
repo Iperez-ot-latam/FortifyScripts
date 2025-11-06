@@ -83,7 +83,7 @@ Before running these scripts, ensure that:
 
 ## 🏗️ `builder` Script
 
-**Path:** `builder/build_edirectory_container.sh`
+**Path:** `builder/edirectory_docker_container_builder.sh`
 
 ### 📜 Purpose
 
@@ -98,7 +98,8 @@ Builds and configures:
 
 ```bash
 cd builder
-./build_edirectory_container.sh
+chmod +x edirectory_docker_container_builder.sh
+./edirectory_docker_container_builder.sh
 ```
 
 ### 🪄 Steps Performed
@@ -114,7 +115,7 @@ cd builder
 
 ## 💣 `destroyer` Script
 
-**Path:** `destroyer/destroy_edirectory_container.sh`
+**Path:** `destroyer/edirectory_docker_container_destroyer.sh`
 
 ### 📜 Purpose
 
@@ -129,7 +130,8 @@ Cleans up:
 
 ```bash
 cd destroyer
-./destroy_edirectory_container.sh
+chmod +x edirectory_docker_container_destroyer.sh
+./edirectory_docker_container_destroyer.sh
 ```
 
 ### 🪄 Steps Performed

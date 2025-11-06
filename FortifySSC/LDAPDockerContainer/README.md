@@ -19,14 +19,17 @@ This project contains all the resources and automation scripts required to set u
 LDAPDockerContainer/
 ├── DockerInstallationFilesPull/                                                    # Directory of the LDAP Docker installation files pull scripts.
 |   ├── 25.2/                                                                       # Version of the Binary files to be pulled.
-|        └── edirectory_931_identityconsole_252_files_pull.sh                       # Script to pull 25.2 LDAP Docker installation files (eDirectory and IdentityConsole) from OneDrive.
+|       ├── edirectory_931_identityconsole_252_files_pull.sh                        # Script to pull 25.2 LDAP Docker installation files (eDirectory and IdentityConsole) from OneDrive.
+|       └── .env                                                                    # Environment variables file used by the pull binary files script.       
 ├── EDirectory/                                                                     # Directory of the configuration and scripts for setting up the eDirectory LDAP and API containers.
 |       └── 9.3.1/                                                                  # Version of eDirectory LDAP and API containers to be deployed.
 |             ├── docker_management_scripts/                                        # Shell scripts to build and destroy the eDirectory LDAP and API containers.
-|                            ├── builder/                                           # Build script directory.
-|                                  └── edirectory_docker_container_builder.sh       # BUilds the eDirectory containers.
-|                            └── destroyer/                                         # Destroy script directory.
-|                                   └── edirectory_docker_container_destroyer.sh    # Destroys the eDirectory containers.
+|             |               ├── builder/                                          # Build script directory.
+|             |               |     ├── edirectory_docker_container_builder.sh      # Script that builds the eDirectory containers.
+|             |               |     └── .env                                        # Environment variables file used by the build script.
+|             |               └── destroyer/                                        # Destroy script directory.
+|             |                     ├── edirectory_docker_container_destroyer.sh    # Script that destroys the eDirectory containers.
+|             |                     └── .env                                        # Environment variables file used by the destroy script.
 !             └── certificates/                                                     # SSL/TLS self-signed certificates for secure HTTPS access to the eDirectory LDAP and API containers.
 └── IdentityConsole/                                                                # Directory of the configuration and scripts for deploying the Identity Console container.
 ```

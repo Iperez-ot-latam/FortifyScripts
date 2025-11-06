@@ -24,6 +24,8 @@ It handles directory creation, environment variable loading, Tomcat download, an
 * 🌍 Internet access to download Apache Tomcat.
 * ✅ `.env` file configured with the following variables:
 
+The values are at the discretion of each user.
+
   ```makefile
   HOME_DIR=/path/to/home               # Home Back Up files directory of the Fortify SSC server
   FORTIFY_SSC_DIR=/path/to/fortify     # Binary files directory of the Fortify SSC server 

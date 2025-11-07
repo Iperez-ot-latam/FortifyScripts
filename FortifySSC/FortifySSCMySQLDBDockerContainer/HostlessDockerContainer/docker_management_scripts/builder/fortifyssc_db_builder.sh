@@ -13,6 +13,9 @@ if [ -f .env ]; then
   set +a
 fi 
 
+# Defines the variables
+FORTIFY_SSC_DATABASE_JDBC_URL="jdbc:mysql://$MYSQL_HOST:$MYSQL_PORT/$FORTIFY_SSC_DATABASE_NAME?sessionVariables=collation_connection=latin1_general_cs&rewriteBatchedStatements=true"    # JDBC URL for the Fortify SSC Setup when connecting to the MySQL Database running on the Docker Container
+
 # Defines color codes for better terminal output readability
 GREEN="\e[32m"
 YELLOW="\e[33m"

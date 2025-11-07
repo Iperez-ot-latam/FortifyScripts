@@ -12,15 +12,13 @@ RED="\e[31m"
 CYAN="\e[36m"
 RESET="\e[0m"
 
-# Defines the variables
-FORTIFY_SSC_VERSION="23.2"														 		     # Current Fortify SSC version in use
-FORTIFY_SSC_DIR="/opt"															                     # Fortify SSC directory																	
-FORTIFY_SSC_TOMCAT_DIR="$FORTIFY_SSC_DIR/Fortify_Software_Security_Center/Fortify_Software_Security_Center_Apache_Tomcat_9"		                     # Apache Tomcat 9 directory used by Fortify SSC current version
-FORTIFY_SSC_FILES_DIR="$FORTIFY_SSC_DIR/Fortify_Software_Security_Center/Fortify_Software_Security_Center_Application_Files/$FORTIFY_SSC_VERSION"            # Directory where Fortify SSC current version files are installed        
-SERVICES_DIR="/etc/systemd/system"                                                                                                       		     # Services directory
-SETENV_BASH_FILE_DIR="$FORTIFY_SSC_TOMCAT_DIR/bin/setenv.sh"									         		     # Fortify SSC setenv bash file path
-FORTIFY_SSC_TOMCAT_SERVICE_FILE_DIR="$SERVICES_DIR/fortify_ssc_tomcat.service"                                                                               # Fortify SSC Apache Tomcat service file path
-ENVIRONMENT_FILE_DIR="/etc/environment"	 												 		     # Environment directory
+# Loads the environment variables from the .env file
+# Checks if the file named .env exists in the current directory
+if [ -f .env ]; then
+  set -a
+  source .env
+  set +a
+fi 
 
 # Prints the first message
 echo -e "${CYAN}Proceeding to configure Fortify SSC Tomcat 9.x on the system at $(date)...${RESET}"

@@ -80,7 +80,6 @@ JavaInstallation/
 
 ---
 
-
 ## 🧾 License
 
 This project is part of the **Fortify SSC Scripts Utilities** suite.

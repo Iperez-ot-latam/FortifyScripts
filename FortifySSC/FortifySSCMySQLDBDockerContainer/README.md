@@ -85,11 +85,11 @@ FortifySSCMySQLDBDockerContainer/
 |       ├── builder/                                     # Build script directory.
 |       |     ├── fortifyssc_db_builder.sh               # Script that builds a lightweight, host-independent MySQL container setup.
 |       |     └── .env                                   # Environment variables file used by the build script.  
-|       └── destroyer/                                   # Scripts to stop and remove the hostless MySQL container and cleanup artifacts.
-|              ├──
-|              └── 
+|       └── destroyer/                                   # Destroyer script directory.
+|              ├── fortify_ssc_db_destroyer.sh           # Script to stop and remove the hostless MySQL container and cleanup artifacts.
+|              └── .env                                  # Environment variables file used by the destroy script. 
 |        
-└─────────────────────────────────────────
+└─────────────────────────────────────────────
 ```
 
 ---

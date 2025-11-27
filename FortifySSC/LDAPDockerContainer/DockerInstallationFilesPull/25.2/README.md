@@ -79,12 +79,12 @@ The values are at the discretion of each user.
 
 ```makefile
 # Defines the variables
-EDIRECTORY_VERSION=                                                                                         # EDirectory version to be installed and backed up
-EDIRECTORY_VERSION_FULL=  									                                                                # EDirectory version number without dots
-IDENTITYCONSOLE_VERSION=                                                                                    # IdentityConsole version to be installed and backed up
-IDENTITYCONSOLE_VERSION_FULL=    							                                                              # IdentityConsole version number without dots	               
-EDIRECTORY_LDAP_BACKUP_DIR=                                                                                 # Back Up directory where EDirectory version 9.3.1 and IdentityConsole version 25.2 files will be stored
-EDIRECTORY_IMAGE_NAME=                                                                                      # EDirectory Image Name
-EDIRECTORY_API_IMAGE_NAME=      								                                                            # EDirectory Image API Name
-IDENTITYCONSOLE_IMAGE_NAME=                							                                                    # IdentityConsole Image Name
+EDIRECTORY_VERSION=                    # EDirectory version to be installed and backed up
+EDIRECTORY_VERSION_FULL=               # EDirectory version number without dots
+IDENTITYCONSOLE_VERSION=               # IdentityConsole version to be installed and backed up
+IDENTITYCONSOLE_VERSION_FULL=          # IdentityConsole version number without dots
+EDIRECTORY_LDAP_BACKUP_DIR=            # Back Up directory where EDirectory and IdentityConsole files will be stored
+EDIRECTORY_IMAGE_NAME=                 # EDirectory Image Name
+EDIRECTORY_API_IMAGE_NAME=             # EDirectory Image API Name
+IDENTITYCONSOLE_IMAGE_NAME=            # IdentityConsole Image Name
 ```

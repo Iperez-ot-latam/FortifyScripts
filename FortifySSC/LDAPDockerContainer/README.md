@@ -17,22 +17,29 @@ This project contains all the resources and automation scripts required to set u
 
 ```
 LDAPDockerContainer/
-├── DockerInstallationFilesPull/                                                    # Directory of the LDAP Docker installation files pull scripts.
-|   ├── 25.2/                                                                       # Version of the Binary files to be pulled.
-|       ├── edirectory_931_identityconsole_252_files_pull.sh                        # Script to pull 25.2 LDAP Docker installation files (eDirectory and IdentityConsole) from OneDrive.
-|       └── .env                                                                    # Environment variables file used by the pull binary files script.       
-├── EDirectory/                                                                     # Directory of the configuration and scripts for setting up the eDirectory LDAP and API containers.
-|       └── 9.3.1/                                                                  # Version of eDirectory LDAP and API containers to be deployed.
-|             ├── docker_management_scripts/                                        # Shell scripts to build and destroy the eDirectory LDAP and API containers.
-|             |               ├── builder/                                          # Build script directory.
-|             |               |     ├── edirectory_docker_container_builder.sh      # Script that builds the eDirectory containers.
-|             |               |     └── .env                                        # Environment variables file used by the build script.
-|             |               └── destroyer/                                        # Destroy script directory.
-|             |                     ├── edirectory_docker_container_destroyer.sh    # Script that destroys the eDirectory containers.
-|             |                     └── .env                                        # Environment variables file used by the destroy script.
-!             └── certificates/                                                     # SSL/TLS self-signed certificates for secure HTTPS access to the eDirectory LDAP and API containers.
-└── IdentityConsole/                                                                # Directory of the configuration and scripts for deploying the Identity Console container.
-└───────────────────────────────────────────────────────────────────────────────
+├── DockerInstallationFilesPull/                                                        # Directory of the eDirectory and IdentityConsole Docker installation binary files pull scripts.
+|   ├── 25.2/                                                                           # Version directory of the Binary files to be pulled.
+|       ├── edirectory_931_identityconsole_252_files_pull.sh                            # Script to pull eDirectory and IdentityConsole version 25.2 Docker installation binary files from OT OneDrive.
+|       └── .env                                                                        # Environment variables file used by the pull binary files script.       
+├── EDirectory/                                                                         # Directory of the configuration and scripts for setting up the eDirectory application and API containers.
+|       └── 9.3.1/                                                                      # Directory of the Version 25.2 of eDirectory application and API containers to be deployed.
+|             ├── docker_management_scripts/                                            # Shell scripts directory  to build and destroy the eDirectory application and API containers.
+|             |               ├── builder/                                              # Build script directory (eDirectory).
+|             |               |     ├── edirectory_docker_container_builder.sh          # Script that builds the eDirectory application and API containers.
+|             |               |     └── .env                                            # Environment variables file used by the build script (eDirectory).
+|             |               └── destroyer/                                            # Destroy script directory (eDirectory).
+|             |                     ├── edirectory_docker_container_destroyer.sh        # Script that destroys the eDirectory application and API containers.
+|             |                     └── .env                                            # Environment variables file used by the destroy script (eDirectory).
+!             └── certificates/                                                         # SSL/TLS self-signed certificates for secure HTTPS access to the eDirectory application and API containers.
+└── IdentityConsole/                                                                    # Directory of the configuration and scripts for deploying the Identity Console container.
+|             ├── docker_management_scripts/                                            # Shell scripts directory to build and destroy the IdentityConsole container.
+|             |               ├── builder/                                              # Build script directory (IdentityConsole).                                       
+|             |               |     ├── identityconsole_docker_container_builder.sh     # Script that builds the IdentityConsole container.
+|             |               |     └── .env                                            # Environment variables file used by the build script (IdentityConsole).
+|             |               └── destroyer/                                            # Destroy script directory (IdentityConsole).
+|             |                     ├── identityconsole_docker_container_destroyer.sh   # Script that destroys the IdentityConsole container.
+|             |                     └── .env                                            # Environment variables file used by the destroy script (IdentityConsole). 
+└───────────────────────────────────────────────────────────────────────────────────
 ```
 
 ---

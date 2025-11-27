@@ -230,7 +230,6 @@ CUSTOM_REGISTRY_CERTIFICATE_SAN_VALUE=                          # SAN value from
 CUSTOM_REGISTRY_UI_CERTIFICATE_SAN_VALUE=                       # SAN value from the Docker Registry UI Certificate
 CUSTOM_REGISTRY_UI_CERTIFICATE_SUBJECT=                         # Subject value from the Docker Registry UI Certificate
 CUSTOM_REGISTRY_CERTIFICATE_SUBJECT=                            # Subject value from the Docker Registry Certificate
-
 ```
 
 ---

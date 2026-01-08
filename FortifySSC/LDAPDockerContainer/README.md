@@ -1,4 +1,4 @@
-# 🗃️ LDAPDockerContainer (eDirectory and IdentityConsole Docker Containers)
+# 🗃️ LDAPDockerContainer (eDirectory, eDirectory API and IdentityConsole Docker Containers)
 
 This project contains all the resources and automation scripts required to set up, manage, and configure **LDAP services** (including **eDirectory Application**, **eDirectory API** and **Identity Console**) within Docker containers for integration with **Fortify SSC** and related systems.
 

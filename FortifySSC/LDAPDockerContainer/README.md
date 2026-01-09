@@ -50,7 +50,7 @@ LDAPDockerContainer/
 |                 |                     ├── edirectory_api_docker_container_builder.sh      # Script that destroys the eDirectory API containers.
 |                 |                     └── .env                                            # Environment variables file used by the destroy script (eDirectory API).
 |                 └── required_files/                                                       # Directory of the configuration and SSL/TLS self-signed certificates files for deploying the eDirecotry API containers.
-|                 |               └── edirapi.yaml                                          # YAML file to generate the eDirecotry API Swagger UI Documentation.                
+|                                 └── edirapi.yaml                                          # YAML file to generate the eDirecotry API Swagger UI Documentation.                
 └────────────────────────────────────────────────────────────────────────────────────────
 ```
 

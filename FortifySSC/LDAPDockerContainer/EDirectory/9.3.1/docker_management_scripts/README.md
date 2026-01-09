@@ -153,7 +153,7 @@ chmod +x edirectory_docker_container_destroyer.sh
 
 ---
 
-## 🔐 .env file used to use on the eDirectory LDAP and API Docker Containers Builder script (generic example)
+## 🔐 .env file used to use on the eDirectory LDAP Appllication Docker Container Builder script (generic example)
 
 The values are at the discretion of each user.
 
@@ -207,7 +207,7 @@ EDIRECTORY_CERTIFICATE_SUBJECT=                                   # Subject valu
 
 ---
 
-## 🔐 .env file used to use on the eDirectory LDAP and API Docker Containers Destroyer script (generic example)
+## 🔐 .env file used to use on the eDirectory LDAP Appllication Docker Container Destroyer script (generic example)
 
 The values are at the discretion of each user.
 

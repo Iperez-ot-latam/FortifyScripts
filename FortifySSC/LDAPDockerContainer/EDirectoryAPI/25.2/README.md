@@ -330,7 +330,7 @@ server {
         #########################################################
 
         # CORS Headers (Crucial for Credentials/Cookies)
-        add_header 'Access-Control-Allow-Origin' 'https://edir.api.ldap.fortifynacho.com.ar:9444' always;
+        add_header 'Access-Control-Allow-Origin' 'https://dockerswaggerapidochostname:9444' always;
         add_header 'Access-Control-Allow-Credentials' 'true' always;
         add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS, PUT, DELETE, PATCH' always;
         add_header 'Access-Control-Allow-Headers' 'Authorization,Accept,Origin,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,X-CSRF-Token,Cookie' always;

@@ -155,7 +155,7 @@ chmod +x edirectory_api_docker_container_destroyer.sh
 
 ---
 
-## 🔐 .env file used to use on the eDirectory API (BackEnd and FrontEnd) Docker Containers Builder script (generic example)
+## 📄 .env file used to use on the eDirectory API (BackEnd and FrontEnd) Docker Containers Builder script (generic example)
 
 The values are at the discretion of each user.
 
@@ -193,7 +193,7 @@ EDIRECTORY_API_SWAGGER_URL=                                                  # E
 
 ---
 
-## 🔐 .env file used to use on the eDirectory API (BackEnd and FrontEnd) Docker Containers Destroyer script (generic example)
+## 📄 .env file used to use on the eDirectory API (BackEnd and FrontEnd) Docker Containers Destroyer script (generic example)
 
 The values are at the discretion of each user.
 

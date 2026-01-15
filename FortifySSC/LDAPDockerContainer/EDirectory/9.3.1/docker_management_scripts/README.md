@@ -9,10 +9,11 @@ The scripts manage SSL certificate creation, Docker volume and network setup, an
 
 Before running these scripts, ensure that:
 
-* **Docker Engine** is installed and running.
+* 🐧 **Linux system** properly configured.
+* 🐳 **Docker Engine** is installed and running.
 * **NetworkManager (`nmcli`)** is available on the system.
-* You have **root** privileges.
-* A `.env` file is present in the same directory as the scripts, defining the environment variables detailed below.
+* 🔐 Proper **root** privileges/permissions to run Docker and modify network routes.
+* 🌐 A `.env` file is present in the same directory as the scripts, defining the environment variables detailed below.
 
 ---
 
@@ -55,7 +56,7 @@ Before running these scripts, ensure that:
 
 ---
 
-### 🐳 Docker Configuration
+### 🐳 Docker & Network Configuration
 
 | Variable                                  | Description                                                                  |
 | ----------------------------------------- | ---------------------------------------------------------------------------- |
@@ -89,10 +90,10 @@ Before running these scripts, ensure that:
 
 Builds and configures:
 
-* Self-signed certificates
-* LDAP data Docker volume
-* Static routes and Docker network settings
-* EDirectory and API containers
+* Self-signed certificates.
+* LDAP data Docker volume.
+* Static routes and Docker network settings.
+* EDirectory container.
 
 ### ▶️ Usage
 
@@ -105,8 +106,8 @@ chmod +x edirectory_docker_container_builder.sh
 ### 🪄 Steps Performed
 
 1. Load variables from `.env`.
-2. Generate and install SSL certificates.
-3. Create Docker volumes.
+2. Generate and install the SSL certificates.
+3. Create the Docker volume.
 4. Configure static routes.
 5. Run containers with defined environment and network settings.
 6. Display build summary and verification info.
@@ -153,7 +154,7 @@ chmod +x edirectory_docker_container_destroyer.sh
 
 ---
 
-## 🔐 .env file used to use on the eDirectory LDAP Appllication Docker Container Builder script (generic example)
+## 📄 .env file used to use on the eDirectory LDAP Appllication Docker Container Builder script (generic example)
 
 The values are at the discretion of each user.
 
@@ -207,7 +208,7 @@ EDIRECTORY_CERTIFICATE_SUBJECT=                                   # Subject valu
 
 ---
 
-## 🔐 .env file used to use on the eDirectory LDAP Appllication Docker Container Destroyer script (generic example)
+## 📄 .env file used to use on the eDirectory LDAP Appllication Docker Container Destroyer script (generic example)
 
 The values are at the discretion of each user.
 

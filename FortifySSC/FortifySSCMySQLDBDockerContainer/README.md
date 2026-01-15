@@ -1,4 +1,4 @@
-# 🐳 FortifySSCMySQLDBDockerContainer (Fortify SSC MySQL Database Docker Container)
+# 🛢️ FortifySSCMySQLDBDockerContainer (Fortify SSC MySQL Database Docker Container)
 
 This directory contains the complete setup and configuration scripts for **Fortify SSC’s MySQL Database Docker Containers**, used to host and manage the **Fortify Software Security Center (SSC)** database in isolated and reproducible environments.
 

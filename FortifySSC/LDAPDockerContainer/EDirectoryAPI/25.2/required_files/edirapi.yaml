@@ -911,7 +911,7 @@ paths:
         schema:
           type: string
           example: https://hostname:port
-      - name: container DN
+      - name: resource DN
         in: path
         required: true
         description: The container DN of the entry of the search base - note that * denotes more items

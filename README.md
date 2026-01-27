@@ -25,7 +25,7 @@ These scripts automate key DevSecOps and infrastructure activities such as:
   - [FrontEnd (Joxit UI)](https://github.com/Joxit/docker-registry-ui)  
   - [BackEnd (Docker Hub Registry)](https://hub.docker.com/_/registry)
 - 🐳 **Pulling all Fortify Docker Images** from **Fortify Docker Hub** into the **Private Docker Registry**
-- <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/d10482ad-8bff-452f-a65f-9882c5bceed3" /> **Installing Fortify Command Line Interface (FCLI)** latest version in a Linux system.
+- ⌨️ **Installing Fortify Command Line Interface (FCLI)** latest version in a Linux system.
 
 ---
 

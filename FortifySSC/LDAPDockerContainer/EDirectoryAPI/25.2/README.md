@@ -1,7 +1,7 @@
 # 🔌⚙️ EDirectory API Docker Containers Environment Variables (build and destroy scripts)
 
 This directory contains automation scripts to **build** and **destroy** Docker containers for **LDAP eDirectory API** and **Swagger eDirectory API Documentation** version **25.2** in a Linux environment.
-The scripts manage SSL certificate extraction, network setup, Swagger authentication automatically, and complete container lifecycle automation.
+The scripts manage SSL certificate extraction, network setup, Swagger authentication creation, and complete container lifecycle automation.
 
 ---
 

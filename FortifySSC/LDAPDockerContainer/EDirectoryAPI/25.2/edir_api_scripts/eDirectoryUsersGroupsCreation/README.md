@@ -1,4 +1,4 @@
-# 🔌 eDirectoryUsersGroupsCreation (eDirectory API – Users & Groups Creation script)
+# 👥 eDirectoryUsersGroupsCreation (eDirectory API – Users & Groups Creation script)
 
 Automation script to **create LDAP users 👤 and groups 👥 in NetIQ eDirectory** using the **eDirectory REST API**.
 

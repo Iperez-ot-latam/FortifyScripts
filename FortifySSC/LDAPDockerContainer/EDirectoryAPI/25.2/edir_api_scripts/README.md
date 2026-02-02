@@ -122,7 +122,6 @@ logs:
 * 🔄 Keep scripts idempotent.
 * 🧹 Clean output directories regularly.
 * 📝 Log everything that matters.
-* 🔐 Rotate API tokens periodically.
 
 ---
 

@@ -92,21 +92,65 @@ The script expects **LDAP-style entries**, separated by a blank line.
 ### 👤 Users Example
 
 ```makefile
-dn: cn=jdoe,o=company
+dn: /eDirAPI/v1/treename/cn=jdoe,o=company
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
 objectClass: inetOrgPerson
 cn: jdoe
 sn: Doe
 givenName: John
+fullName: Jhon Doe
 mail: jdoe@company.com
+telephoneNumber: +123456789
+title: UserRoleInCompany
+ou: UserArea
+l: UserCountryState
+
+dn: /eDirAPI/v1/treename/cn=jandoe,o=company
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: jandoe
+sn: Doe
+givenName: Jane
+fullName: Jane Doe
+mail: jandoe@company.com
+telephoneNumber: +987654321
+title: UserRoleInCompany
+ou: UserArea
+l: UserCountryState
+
+...
 ```
 
 ### 👥 Groups Example
 
 ```makefile
-dn: cn=developers,o=company
+dn: /eDirAPI/v1/ot-tree/developers,o=company
+objectClass: top
 objectClass: groupOfNames
 cn: developers
-member: cn=jdoe,o=optima
+description: Description of the group.
+l: Region, country
+member: /eDirAPI/v1/treename/cn=jdoe,o=company
+owner: /eDirAPI/v1/reename/cn=jandoe,o=company
+ou: UserArea
+o: company
+
+dn: /eDirAPI/v1/ot-tree/projectmanagers,o=company
+objectClass: top
+objectClass: groupOfNames
+cn: projectmanagers
+description: Description of the group.
+l: Region, country
+member: /eDirAPI/v1/treename/cn=jdoe,o=company
+owner: /eDirAPI/v1/reename/cn=jandoe,o=company
+ou: UserArea
+o: company
+
+...
 ```
 
 ---
@@ -115,6 +159,8 @@ member: cn=jdoe,o=optima
 
 ```bash
 run:
+    cd eDirectoryUsersGroupsCreation
+    chmod +x edir_users_groups_creation.py
 	./edir_users_groups_creation.py
 ```
 

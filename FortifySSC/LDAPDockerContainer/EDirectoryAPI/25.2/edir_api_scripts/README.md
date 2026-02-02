@@ -1,6 +1,6 @@
 # 🌐 eDirectory API Scripts
 
-A collection of scripts that interact with the **NetIQ eDirectory API** for automation, administration, and reporting.
+A collection of scripts that interacts with the **NetIQ eDirectory API** for automation, administration, and reporting.
 
 These scripts are designed for DevOps / Security / Platform teams who want to **automate eDirectory operations** using API calls in a repeatable and configurable way.
 

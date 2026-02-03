@@ -40,7 +40,7 @@ paths:
       - Initialize
       operationId: initialize
       servers:
-        - url: 'https://edir.api.ldap.fortifynacho.com.ar:9444/eDirAPI'
+        - url: 'https://dockeredirapihostname:9444/eDirAPI'
           description: Endpoint that redirects to the Root API endpoint on eDirAPI
       security:
       - cookieAuth: []

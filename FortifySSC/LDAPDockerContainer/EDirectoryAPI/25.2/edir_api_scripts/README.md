@@ -38,10 +38,9 @@ All of the scripts rely on environment variables loaded from a `.env` file. Just
 Each script can be executed directly or via a Makefile-style workflow.
 
 ```bash
-run:
-    cd script_directory
-    chmod +x script_name.py
-	./script_name.py
+cd script_directory
+chmod +x script_name.py
+./script_name.py
 ```
 
 ---
@@ -54,7 +53,6 @@ imports:
 	- os
 	- csv / json
 	- dotenv
-
 flow:
 	load-env -> authenticate -> read input files -> api-call -> process-data -> create output files
 ```
